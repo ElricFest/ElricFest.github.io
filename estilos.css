@@ -329,7 +329,7 @@ th .ocultar{
 }
 
 .status{
-    background-color: red;
+    background-color: rgba(26,32,58,1);
     display:inline-block;
     color: white;
     border-radius: 5px;
