@@ -53,7 +53,7 @@ function getTableValues(){
    columns = [];
     rows = [];
   
-    $('.table-report tr').each(function( index ) {
+    $('.tabla-forma tr').each(function( index ) {
       if(index == 0){
         var text = $( this ).text();
         var tempArray = text.split("\n");
