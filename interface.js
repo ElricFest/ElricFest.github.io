@@ -105,10 +105,7 @@ $(document).ready(function(){
     
     
     // Modal para venta
-    
-    $(".btn_buscar").on("click", function(){
-        alert("Entro");
-    });
+   
      $(".btn_buscar").on("click", function(){
           alert('Entro');
         //modal que queremos abrir
