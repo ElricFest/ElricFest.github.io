@@ -157,10 +157,7 @@ $(document).ready(function(){
     
     //Funcion para buscar
     
-    $('btn_buscar').click(function(e)){
-        
-    });
-    
+  
         
     
     //Funcion modal para botón eliminar
