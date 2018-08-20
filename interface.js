@@ -113,7 +113,7 @@ $(document).ready(function(){
         //$(".modal-ventas").fadeIn();
         //$(".modal-background").fadeIn();
          
-          $.ajax({ url: 'buscar_ventas.php', dataType: 'json', success: function(data){ alert(data); } });
+          $.ajax({ url: 'buscar_venta.php', dataType: 'json', success: function(data){ alert(data); } });
               
         
     });
