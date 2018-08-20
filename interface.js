@@ -48,7 +48,16 @@ $(document).ready(function(){
     var domiciliSucursal ="";
     var responsableSucursal ="";
     
+    //Variables para datos página principal
+    
+    var ventasDia ="";
+    var productos = "";
+    var clientes = "";
     $(".inicio").fadeIn();
+    
+    // Ventas
+    
+    var idVenta ="";
     
     
     
@@ -63,7 +72,7 @@ $(document).ready(function(){
         $("."+id).fadeIn();
         $(".menu ul li").removeClass("active");
         $(this).addClass("active"); 
-        $(".modal, .modal-background, .modal-delete, modal-modificar, .inicio").fadeOut(); 
+        $(".modal, .modal-background, .modal-delete, modal-modificar, .inicio, .modal-ventas").fadeOut(); 
     });
     
     //click sobre registrar
@@ -93,6 +102,15 @@ $(document).ready(function(){
         $(".modal-sucursal").fadeIn();
         $(".modal-background").fadeIn();
     });
+    
+    
+    // Modal para venta
+     $(".btn_buscar").on("click", function(){
+        //modal que queremos abrir
+        $(".modal-ventas").fadeIn();
+        $(".modal-background").fadeIn();
+    });
+    
     
     //cerrar modal
     $(".cerrar-modal").on("click", function(){
@@ -129,6 +147,15 @@ $(document).ready(function(){
         
         
     });
+    
+    
+    //Funcion para buscar
+    
+    $('btn_buscar').click(function(e)){
+        
+    });
+    
+        
     
     //Funcion modal para botón eliminar
     
