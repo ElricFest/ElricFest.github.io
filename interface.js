@@ -105,7 +105,8 @@ $(document).ready(function(){
     
     
     // Modal para venta
-   
+    
+    
      $(".btn_buscar").on("click", function(){
           alert('Entro');
         //modal que queremos abrir
@@ -152,10 +153,14 @@ $(document).ready(function(){
     });
     
     
-    //Funcion para buscar
+    //Funcion para buscar venta
     
-  
-        
+    $('.btn_buscar').click(function(e){
+        $(".idV").val(idVenta);
+    });
+    
+    
+   
     
     //Funcion modal para botón eliminar
     
