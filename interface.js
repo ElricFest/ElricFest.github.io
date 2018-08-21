@@ -108,13 +108,12 @@ $(document).ready(function(){
     
     
      $(".btn_buscar").on("click", function(){
-        //  alert('Entro');
+         //alert('Entro');
         //modal que queremos abrir
-        //$(".modal-ventas").fadeIn();
-        //$(".modal-background").fadeIn();
+        $(".modal-ventas").fadeIn();
+        $(".modal-background").fadeIn();
          
-          $.ajax({ url: 'buscar_venta.php', dataType: 'json', success: function(data){ alert(data); } });
-              
+         
         
     });
     
