@@ -20,6 +20,7 @@ function validaUser(){
     
     
     expNombre = /[ A-Za-zäÄëËïÏöÖüÜáéíóúáéíóúÁÉÍÓÚÂÊÎÔÛâêîôûàèìòùÀÈÌÒÙ.-]+/;
+    expUsuario =/^[a-z0-9ü][a-z0-9ü_]{3,9}$/;
     
     expCorreo = /\w+@\w+\.+[a-z]/;
     
@@ -34,5 +35,8 @@ function validaUser(){
     if(!expNombre.test(nombre)){
        alert("El nombre esta escrito incorrectamente");
         return false;
-       }
+       }else if(!expUsuario.test(usuario)){
+                alert("El usuario esta escrito incorrectamente");
+                return false;
+                }
 }
