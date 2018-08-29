@@ -40,7 +40,7 @@ function validaUser(){
                 alert("El nombre esta escrito incorrectamente");
                 return false;
                 }else if(!expPassword.test(password)){
-                         alert("El paswor esta escrito incorrectamente, debe contener minimo 8 caracteres maximo 15, al menos una letra mayuscula, al enos una letra minuscula, al enos un digito y un caracter especial");
+                         alert("El paswor esta escrito incorrectamente, debe contener minimo 8 caracteres maximo 15, al menos una letra mayuscula, al menos una letra minuscula, al menos un digito y un caracter especial");
                          return false;
                          
                          }
