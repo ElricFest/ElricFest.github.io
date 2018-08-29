@@ -21,6 +21,7 @@ function validaUser(){
     
     expNombre = /[ A-Za-zäÄëËïÏöÖüÜáéíóúáéíóúÁÉÍÓÚÂÊÎÔÛâêîôûàèìòùÀÈÌÒÙ.-]+/;
     expUsuario =/^[a-z0-9ü][a-z0-9ü_]{3,9}$/;
+    expPassword =/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[$@$!%*?&])[A-Za-z\d$@$!%*?&]{8,15}[^'\s]/;
     
     expCorreo = /\w+@\w+\.+[a-z]/;
     
@@ -36,7 +37,11 @@ function validaUser(){
        alert("El nombre esta escrito incorrectamente");
         return false;
        }else if(!expUsuario.test(usuario)){
-                alert("El usuario esta escrito incorrectamente");
+                alert("El nombre esta escrito incorrectamente");
                 return false;
-                }
+                }else if(!expPassword.test(password)){
+                         alert("El paswor esta escrito incorrectamente, debe contener minimo 8 caracteres maximo 15, al menos una letra mayuscula, al enos una letra minuscula, al enos un digito y un caracter especial");
+                         return false;
+                         
+                         }
 }
