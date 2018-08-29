@@ -11,3 +11,27 @@
       imei2.disabled = false; 
      }
     }
+
+
+function validaUser(){
+    var usuario, password, nombre, edad, apellido_paterno, apellido_materno, domicilio, expCorreo;
+    
+    var expUsuario;
+    
+    expUsuario = /^[a-z]{3,}$/i;
+    
+    expCorreo = /\w+@\w+\.+[a-z]/;
+    
+    usuario = document.getElementById('usuario').value;
+    password = document.getElementById('password').value;
+    nombre = document.getElementById('nombre').value;
+    edad = document.getElementById('edad').value;
+    apellido_paterno = document.getElementById('apellido_paterno').value;
+    apellido_materno = document.getElementById('apellido_materno').value;
+    domicilio = document.getElementById('domicilio').value;
+
+    if(!expUsuario.test(nombre)){
+       alert("El nombre esta escrito incorrectamente");
+        return false;
+       }
+}
