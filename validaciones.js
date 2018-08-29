@@ -14,23 +14,24 @@
 
 
 function validaUser(){
-    var usuario, password, nombre, edad, apellido_paterno, apellido_materno, domicilio, expCorreo;
+    var usuario, password, nombre, edad, apellido_paterno, apellido_materno, domicilio, ;
     
-    var expUsuario;
+    var expUsuario, expPassword, expNombre, expEdad, expApellidoP, expApellidoM, expDomicilio, expCorreo ;
     
-    expUsuario = /^[a-z]{3,}$/i;
+    
+    expNombre = /[ A-Za-zäÄëËïÏöÖüÜáéíóúáéíóúÁÉÍÓÚÂÊÎÔÛâêîôûàèìòùÀÈÌÒÙ.-]+/;
     
     expCorreo = /\w+@\w+\.+[a-z]/;
     
-    usuario = document.getElementById('usuario').value;
-    password = document.getElementById('password').value;
-    nombre = document.getElementById('nombre').value;
-    edad = document.getElementById('edad').value;
-    apellido_paterno = document.getElementById('apellido_paterno').value;
-    apellido_materno = document.getElementById('apellido_materno').value;
-    domicilio = document.getElementById('domicilio').value;
+    usuario = document.getElementById('Usuario').value;
+    password = document.getElementById('Password').value;
+    nombre = document.getElementById('Nombre').value;
+    edad = document.getElementById('Edad').value;
+    apellido_paterno = document.getElementById('ApellidoP').value;
+    apellido_materno = document.getElementById('Domicilio').value;
+    domicilio = document.getElementById('Domicilio').value;
 
-    if(!expUsuario.test(nombre)){
+    if(!expNombre.test(nombre)){
        alert("El nombre esta escrito incorrectamente");
         return false;
        }
