@@ -21,7 +21,7 @@ function validaUser(){
     //EXPRESIONES REGULARES PARA VALIDAR FORMULARIO DE USUARIO
     
     expNombre = /[ A-Za-zäÄëËïÏöÖüÜáéíóúáéíóúÁÉÍÓÚÂÊÎÔÛâêîôûàèìòùÀÈÌÒÙ.-]+/;
-    expUsuario =/^[a-z0-9ü][a-z0-9ü_]{3,9}$/;
+    expUsuario =/\D[A-Za-zÁÉÍÓÚáéíóú]{3,9}$/;
     expPassword =/^(?=\w*\d)(?=\w*[A-Z])(?=\w*[a-z])\S{8,16}$/;
     expEdad = /^1[5-9]|[3-6]\d|7[0-5]$/;
         
