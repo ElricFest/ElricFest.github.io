@@ -14,7 +14,7 @@
 
 
 function validaUser(){
-    var usuario, password, nombre, edad, apellido_paterno, apellido_materno, domicilio, ;
+    var usuario, password, nombre, edad, apellido_paterno, apellido_materno, domicilio;
     
     var expUsuario, expPassword, expNombre, expEdad, expApellidoP, expApellidoM, expDomicilio, expCorreo ;
     
