@@ -45,9 +45,11 @@ function validaUser(){
         return false;
                 }
     if(!expPassword.test(password)){
-                         alert("La contraseña esta escrita incorrectamente, debe contener minimo 8 caracteres maximo 16, al menos una letra mayuscula, al menos una letra minuscula, al menos un digito y un caracter especial");
-                         return false;
-                         } /*else if(!expEdad.test(edad)){
-                             alert("El usuario debe ser mayor a 15 años de edad");
-                         }*/
+        alert("La contraseña esta escrita incorrectamente, debe contener minimo 8 caracteres maximo 16, al menos una letra mayuscula, al menos una letra minuscula, al menos un digito y un caracter especial");
+        return false;
+                         } 
+    if(!expEdad.test(edad)){
+        alert("El usuario debe ser mayor a 15 años de edad");
+        return false;
+                         }
 }
