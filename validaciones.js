@@ -18,10 +18,13 @@ function validaUser(){
     
     var expUsuario, expPassword, expNombre, expEdad, expApellidoP, expApellidoM, expDomicilio, expCorreo ;
     
+    //EXPRESIONES REGULARES PARA VALIDAR FORMULARIO DE USUARIO
     
     expNombre = /[ A-Za-zäÄëËïÏöÖüÜáéíóúáéíóúÁÉÍÓÚÂÊÎÔÛâêîôûàèìòùÀÈÌÒÙ.-]+/;
     expUsuario =/^[a-z0-9ü][a-z0-9ü_]{3,9}$/;
     expPassword =/^(?=\w*\d)(?=\w*[A-Z])(?=\w*[a-z])\S{8,16}$/;
+    expEdad = /^1[5-9]|[3-6]\d|7[0-5]$/;
+        
     
     expCorreo = /\w+@\w+\.+[a-z]/;
     
@@ -42,6 +45,7 @@ function validaUser(){
                 }else if(!expPassword.test(password)){
                          alert("El paswor esta escrito incorrectamente, debe contener minimo 8 caracteres maximo 15, al menos una letra mayuscula, al menos una letra minuscula, al menos un digito y un caracter especial");
                          return false;
-                         
+                         } else if(!expEdad.test(edad)){
+                             alert("El usuario debe ser mayor a 15 años de edad");
                          }
 }
