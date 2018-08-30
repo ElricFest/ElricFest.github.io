@@ -14,7 +14,7 @@
 
 
 function validaUser(){
-    var usuario, password, nombre, edad, apellido_paterno, apellido_materno, domicilio;
+    var usuario, password, nombre, edad, apellido_paterno, apellido_materno, domicilio ;
     
     var expUsuario, expPassword, expNombre, expEdad, expApellidoP, expApellidoM, expDomicilio, expCorreo ;
     
@@ -39,10 +39,10 @@ function validaUser(){
     if(!expNombre.test(nombre)){
        alert("El nombre esta escrito incorrectamente");
         return false;
-       }/*else if(!expUsuario.test(usuario)){
+       }else if(!expUsuario.test(usuario)){
                 alert("El usuario esta escrito incorrectamente");
                 return false;
-                }else if(!expPassword.test(password)){
+                }/*else if(!expPassword.test(password)){
                          alert("La contraseña esta escrita incorrectamente, debe contener minimo 8 caracteres maximo 16, al menos una letra mayuscula, al menos una letra minuscula, al menos un digito y un caracter especial");
                          return false;
                          } else if(!expEdad.test(edad)){
