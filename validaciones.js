@@ -21,7 +21,7 @@ function validaUser(){
     
     expNombre = /[ A-Za-zäÄëËïÏöÖüÜáéíóúáéíóúÁÉÍÓÚÂÊÎÔÛâêîôûàèìòùÀÈÌÒÙ.-]+/;
     expUsuario =/^[a-z0-9ü][a-z0-9ü_]{3,9}$/;
-    expPassword =/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[$@$!%*?&])[A-Za-z\d$@$!%*?&]{8,15}[^'\s]/;
+    expPassword =/^(?=\w*\d)(?=\w*[A-Z])(?=\w*[a-z])\S{8,16}$/;
     
     expCorreo = /\w+@\w+\.+[a-z]/;
     
