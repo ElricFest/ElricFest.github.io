@@ -39,9 +39,10 @@ function validaUser(){
     if(!expNombre.test(nombre)){
        alert("El nombre esta escrito incorrectamente");
         return false;
-       }else if(!expUsuario.test(usuario)){
-                alert("El usuario esta escrito incorrectamente");
-                return false;
+       }
+    if(!expUsuario.test(usuario)){
+        alert("El usuario esta escrito incorrectamente");
+        return false;
                 }/*else if(!expPassword.test(password)){
                          alert("La contraseña esta escrita incorrectamente, debe contener minimo 8 caracteres maximo 16, al menos una letra mayuscula, al menos una letra minuscula, al menos un digito y un caracter especial");
                          return false;
